@@ -1,6 +1,6 @@
 <template>
   <div class="logo-wrapper">
-    <img src="logo.jpg" width="500" height="89">
+    <img src="logo.jpg" :width="logowidth" :height="logoheight" alt="Volunteerathon logo">
   </div>
 </template>
 
@@ -8,4 +8,7 @@
 </style>
 
 <script>
+export default {
+  props: [ 'logowidth', 'logoheight' ]
+}
 </script>
