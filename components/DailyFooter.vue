@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <span class="text">
-          DailySource.org
+          Volunteerathon
         </span>
       </div>
     </div>
