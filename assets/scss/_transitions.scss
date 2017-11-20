@@ -76,12 +76,6 @@
   100% { transform: scale(1) }
 }
 
-@keyframes movingBackground {
-  0% { background-color: $color-emphasis; }
-  50% { background-color: $color-emphasis-alt; }
-  100% { background-color: $color-emphasis; }
-}
-
 @keyframes bounceInfinite {
   0% { transform: translateY(0px) }
   60% { transform: translateY(5px) }

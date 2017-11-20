@@ -1,17 +1,17 @@
 <template>
   <div class="index">
     <div class="page-wrapper">
-      <Section1/>
+      <Masthead/>
     </div>
   </div>
 </template>
 
 <script>
-import Section1 from '~/components/Section1.vue'
+import Masthead from '~/components/Masthead.vue'
 
 export default {
   components: {
-    Section1
+    Masthead
   },
   transition: 'page',
   data () {

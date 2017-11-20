@@ -1,6 +1,6 @@
 <template>
   <div class="logo-wrapper">
-    DailySource
+    <img src="logo.jpg" width="500" height="89">
   </div>
 </template>
 

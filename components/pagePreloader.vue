@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper-preloader"  v-bind:class="{ 'hide-on-load': loading }">
-    dailysource.org
+    <Logo />
   </div>
 </template>
 
@@ -14,24 +14,21 @@
   height: 100%;
   width: 100%;
   transition: opacity 0.1s ease-in-out;
-  background-color: $color-emphasis;
+  background-color: $color-bglight;
   display: flex;
   justify-content: center;
   align-items: center;
-    
-  svg {
-    animation: spin 1s ease-in-out infinite;
-
-    path {
-      fill: $color-bg-light;
-      fill-rule:nonzero;
-    }
-  }
 }
+
 </style>
 
 <script>
+import Logo from '~/components/Logo.vue'
+
 export default {
+  components: {
+    Logo
+  },
   mounted () {
     setTimeout(() => {
       this.loading = false
