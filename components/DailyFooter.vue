@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <span class="text">
-          Volunteerathon
+          Volunteerathon ®2017
         </span>
       </div>
     </div>
