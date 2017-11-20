@@ -5,7 +5,7 @@
         <pagePreloader/>
       </div>
     </transition>
-    <div class="default-layout" >
+    <div class="default-layout" v-if="!loading">
       <Navigation />
       <nuxt />
       <DailyFooter />
