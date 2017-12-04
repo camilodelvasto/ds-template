@@ -124,7 +124,7 @@ h3 {
 
 .container {
   @include breakpoint($sm) {
-    max-width: 700px;
+    max-width: 840px;
     margin: 0 auto !important;
   }
 }
