@@ -5,9 +5,13 @@
         <div class="navbar-brand">
           <nuxt-link to="/"><Logo logowidth="350" logoheight="62" /></nuxt-link>
         </div>
-        <div class="navbar-end">
+        <div class="navbar-start">
           <nuxt-link to="/">Login</nuxt-link>
           <nuxt-link to="/">Register</nuxt-link>
+        </div>
+        <div class="navbar-end">
+          <span class="small">Powered by </span>
+          <img :src="maxGoodImgSrc" width="200px">
         </div>
       </div>
     </nav>
@@ -15,9 +19,8 @@
 </template>
 
 <style scoped lang="scss">
-.navbar-end {
-  height: 20px;
-  margin-top: 25px;
+.navbar-start {
+  text-align: center;
 
   a {
     margin-right: 10px;
@@ -31,7 +34,44 @@
       padding-right: 0;
     }
   }
+
+  @include breakpoint($bulma) {
+    margin-left: 50px;
+    margin-top: 33px;
+  }
 }
+
+.navbar-brand {
+  justify-content: center;
+}
+.navbar-end {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+
+  @include breakpoint($bulma) {
+    height: 20px;
+    margin-top: 25px;
+    margin-right: 45px;
+  }
+  span {
+    color: $color-medium-gray;
+    font-size: 12px;
+  }
+}
+.navbar {
+  >.container {
+    margin: 0 !important;
+
+    @include breakpoint($md) {
+      margin: 10px 20px !important;
+      display: flex;
+      align-items: center;
+    }    
+  }
+}
+
+
 </style>
 
 <script>
@@ -40,6 +80,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data () {
+    return {
+      maxGoodImgSrc: 'maximum-good-logo-reduced.png'
+    }
   }
 }
 </script>
