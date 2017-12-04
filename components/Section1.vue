@@ -22,9 +22,9 @@ export default {
   data () {
     return {
       hero: {
-        headline: 'Raise money while<br> doing good!',
+        headline: 'Raise donations<br> while doing<br> good!',
         imgsrc: 'https://res.cloudinary.com/startics/image/upload/v1511201291/hero_kovj60.png',
-        tagline: 'Want to make a far greater impact with your time?'
+        tagline: 'Join NOW! It’s FUN…'
       }
     }
   }
