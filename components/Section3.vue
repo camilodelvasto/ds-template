@@ -2,11 +2,11 @@
   <div class="index">
     <div :fixed="true" class="is-fixed">
       <div class="page-wrapper">
-        <div class="container">
+        <div class="container capped">
           <h1>The new way quadruples the benefits</h1>
         </div>
       </div>
-      <div class="container">
+      <div class="container capped">
         <div class="logo-badge">
           <h3>If you do this and invite people to support you</h3>
           <div class="logo">
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container capped">
         <div class="columns combo-wrapper is-multiline">
           <ComboBox iconsrc="money.png" duplicate="false">
             <h2>You raise more money</h2>
@@ -59,7 +59,7 @@
           </ComboBox>
         </div>
       </div>
-      <div class="container">
+      <div class="container capped">
         <h3>That’s five wins instead of one for the same amount of effort</h3>
       </div>
     </div>

@@ -39,3 +39,12 @@ blockquote {
 .navbar >.container .navbar-brand {
   margin-left: 0 !important;
 }
+
+.container {
+  &.capped {
+    @include breakpoint($sm) {
+      max-width: 840px;
+      margin: 0 auto !important;
+    }
+  }
+}
