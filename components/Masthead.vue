@@ -8,6 +8,7 @@
         <div class="navbar-start">
           <nuxt-link to="/">Login</nuxt-link>
           <nuxt-link to="/">Register</nuxt-link>
+          <img class="share-button" :src="shareButtonImgSrc" width="">
         </div>
         <div class="navbar-end">
           <span class="small">Powered by </span>
@@ -23,15 +24,12 @@
   text-align: center;
 
   a {
+    line-height: 1;
     margin-right: 10px;
     padding-right: 10px;
-    border-right: 1px solid $color-emphasis;
-    line-height: 1;
 
-    &:last-child {
-      border-right: none;
-      margin-right: 0;
-      padding-right: 0;
+    &:first-child {
+      border-right: 1px solid $color-emphasis;
     }
   }
 
@@ -45,14 +43,16 @@
   justify-content: center;
 }
 .navbar-end {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 5px;
   text-align: center;
 
   @include breakpoint($bulma) {
     height: 20px;
     margin-top: 25px;
-    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   span {
     color: $color-medium-gray;
@@ -71,6 +71,14 @@
   }
 }
 
+.share-button {
+  margin-bottom: -5px;
+
+  @include breakpoint($bulma) {
+    margin-top: -5px;
+  }
+}
+
 
 </style>
 
@@ -83,7 +91,8 @@ export default {
   },
   data () {
     return {
-      maxGoodImgSrc: 'maximum-good-logo-reduced.png'
+      maxGoodImgSrc: 'maximum-good-logo-reduced.png',
+      shareButtonImgSrc: 'share-button.png'
     }
   }
 }
