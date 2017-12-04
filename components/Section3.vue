@@ -122,6 +122,8 @@ h3 {
 .is-fixed.Masthead {
 }
 
+
+
 .container {
   @include breakpoint($sm) {
     max-width: 840px;
@@ -145,6 +147,10 @@ h3 {
 .columns {
   margin-top: 20px;
 
+  @include breakpoint($sm) {
+    justify-content: center;
+  }
+
   .card {
     padding: 0;
     margin: 10px;
@@ -165,11 +171,6 @@ h3 {
       }
     }
   }
-}
-
-.combo-wrapper {
-  margin: 10px 0;
-  justify-content: center;
 }
 
 .fade-enter-active, .fade-leave-active {

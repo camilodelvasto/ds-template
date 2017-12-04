@@ -14,13 +14,13 @@
 .column {
   text-align: center;
 
-  @include breakpoint($bulma) {
-    max-width: 33%;
-    min-width: 33%;    
-  }
-
   .icon-wrapper {
     text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    min-width: 30%;
+    max-width: 33%;
   }
 
   h2 {
