@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <Parallax :fixed="true" class="is-fixed" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }">
+    <Parallax :fixed="false" class="is-fixed" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }">
       <div class="page-wrapper">
         <div class="container capped">
           <h1>The old way is OK</h1>
@@ -85,6 +85,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.Masthead {
+  min-height: 120vh;
+}
 
 h1 {
   color: $color-text;
