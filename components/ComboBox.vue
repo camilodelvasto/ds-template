@@ -12,20 +12,27 @@
 
 <style scoped lang="scss">
 .column {
-  max-width: 27%;
-  min-width: 27%;
   text-align: center;
+
+  @include breakpoint($bulma) {
+    max-width: 33%;
+    min-width: 33%;    
+  }
 
   .icon-wrapper {
     text-align: center;
   }
 
   h2 {
-    font-size: 24px;
-    color: $color-emphasis;
+    font-size: 14px;
+    color: $color-text;
     font-weight: bold;
     line-height: 1.1;
     margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 12px !important;
   }
 }
 

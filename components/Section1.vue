@@ -3,7 +3,7 @@
     <div class="page-wrapper">
       <Masthead/>
       <Navigation />
-      <Hero :headline="hero.headline" :imgsrc="hero.imgsrc" :tagline="hero.tagline"/>
+      <Hero :headline="hero.headline" :imgsrc="hero.imgsrc" :tagline="hero.tagline" :cta="hero.cta"/>
     </div>
   </div>
 </template>
@@ -24,7 +24,8 @@ export default {
       hero: {
         headline: '<span class="text-line-1">Raise donations</span><br> <span class="text-line-2">while doing</span><br> <span class="text-line-3">good!</span>',
         imgsrc: 'https://res.cloudinary.com/startics/image/upload/v1511201291/hero_kovj60.png',
-        tagline: 'Join NOW! It’s FUN…'
+        cta: 'Join NOW! It’s FUN…',
+        tagline: 'Want to make a far greater impact with your time?'
       }
     }
   }

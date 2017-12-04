@@ -5,10 +5,11 @@
       <div class="hero-body">
         <div class="content-container">
           <h1 class="title" v-html="headline"></h1>
-          <h3 class="tagline" v-html="tagline"></h3>
+          <h3 class="cta" v-html="cta"></h3>
         </div>
       </div>
     </section>
+    <h3 class="tagline" v-html="tagline"></h3>
   </div>
 </template>
 
@@ -58,17 +59,22 @@
         font-size: 40px;
       }
     }
-
-    .cta {
-      font-size: 24px;
-    }
   }
 }
 
 .tagline {
+  z-index: 1;
+  position: static;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.cta {
   font-size: 20px;
   color: $color-emphasis;
-  bottom: 12vw;
+  bottom: 13vw;
   position: absolute;
 
   @include breakpoint($sm) {
@@ -93,6 +99,6 @@
 
 <script>
 export default {
-  props: [ 'headline', 'imgsrc', 'tagline' ]
+  props: [ 'headline', 'imgsrc', 'tagline', 'cta' ]
 }
 </script>
