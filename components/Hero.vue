@@ -22,14 +22,29 @@
   position: relative;
 
   @include breakpoint($sm) {
+    min-height: 35vh;
+  }
 
+  @include breakpoint($bulma) {
+    min-height: 70vh;
   }
 
   .hero-img {
     width: 100vw;
     height: 40vh;
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
+
+    @include breakpoint($sm) {
+      background-size: contain;
+      height: 35vh;
+    }
+
+    @include breakpoint($bulma) {
+      background-size: cover;
+      min-height: 70vh;
+    }
   }
 
   .hero-body {
@@ -37,12 +52,13 @@
 
     h1 {
       position: absolute;
-      font-size: 28px;
-      font-style: italic;
-      font-weight: bold;
-      color: $color-emphasis-alt;
       text-align: left;
       top: 17px;
+      font-size: 28px;
+
+      @include breakpoint($bulma) {
+        font-size: 40px;
+      }
     }
 
     .cta {
@@ -54,6 +70,7 @@
 .tagline {
   font-size: 20px;
   text-align: center;
+  color: $color-emphasis;
 }
 
 
