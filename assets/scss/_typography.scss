@@ -67,6 +67,14 @@ body {
       font-size: 30px;
     }
 
+    @include breakpoint($bulma) {
+      font-size: 32px;
+    }
+
+    @include breakpoint($xg) {
+      font-size: 50px;
+    }
+
     .text-line-1 {
       font-weight: 300;
     }
