@@ -41,6 +41,16 @@
 
 .navbar-brand {
   justify-content: center;
+  margin-bottom: 10px;
+
+  a {
+    width: 200px;
+    padding-top: 10px;
+
+    @include breakpoint($bulma) {
+      width: auto;
+    }
+  }
 }
 .navbar-end {
   margin-top: 15px;
@@ -79,7 +89,9 @@
   }
 }
 
-
+.nav-container {
+  border-bottom: 1px solid $color-silver;
+}
 </style>
 
 <script>
