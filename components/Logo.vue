@@ -5,6 +5,13 @@
 </template>
 
 <style scoped lang="scss">
+.logo-wrapper {
+  margin-left: -4px;
+  
+  @include breakpoint($sm) {
+    margin-left: -9px;  
+  }
+}
 </style>
 
 <script>

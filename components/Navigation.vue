@@ -17,10 +17,11 @@
 </template>
 
 <style scoped lang="scss">
+
 .navbar {
   background: $color-emphasis-alt;
-  min-height: 0;
-
+  min-height: unset !important;
+  padding-top: 10px;
 }
 .navbar-container {
   height: 20px;
