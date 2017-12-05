@@ -9,7 +9,9 @@
         </div>
       </div>
     </section>
-    <h3 class="tagline" v-html="tagline"></h3>
+    <div class="container">
+      <h3 class="tagline" v-html="tagline"></h3>
+    </div>
   </div>
 </template>
 
@@ -25,6 +27,10 @@
   }
 
   @include breakpoint($bulma) {
+    min-height: 45vw;
+  }
+
+  @include breakpoint($lg) {
     min-height: 34vw;
   }
 
@@ -80,12 +86,12 @@
   position: absolute;
 
   @include breakpoint($sm) {
-    bottom: 9vw;
+    bottom: 10vw;
   }
 
   @include breakpoint($md) {
-    bottom: 15vw;
     font-size: 28px;
+    bottom: 7vw;
   }
 
   @include breakpoint($lg) {

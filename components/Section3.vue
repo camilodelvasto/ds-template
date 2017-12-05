@@ -123,8 +123,6 @@ h3 {
 .is-fixed.Masthead {
 }
 
-
-
 .container {
   @include breakpoint($sm) {
     max-width: 840px;
@@ -142,6 +140,7 @@ h3 {
     color: $color-text;
     font-size: 16px;
     padding-bottom: 0;
+    margin-right: 10px;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="index">
-    <Parallax :fixed="true" class="is-fixed" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }">
-      <div class="page-wrapper">
+    <div :fixed="true" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }" breakpoint="(min-width: 968px)">
+      <div class="page-wrapper secondary-section">
         <div class="container capped">
           <h1>The old way is OK</h1>
         </div>
@@ -46,7 +46,7 @@
       <div class="container capped">
         <h3></h3>
       </div>
-    </Parallax>
+    </div>
   </div>
 </template>
 
@@ -137,6 +137,7 @@ h3 {
       padding: 10px;
       height: calc(100vw - 30px);
       border: 10px solid $white;
+      background-size: cover;
 
       @include breakpoint($sm) {
         height: calc(252px - 30px);

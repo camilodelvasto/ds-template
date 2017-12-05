@@ -15,12 +15,20 @@
 }
 
 .hide-me {
-  visibility: hidden;
+  display: none;
+
+  @include breakpoint($bulma) {
+    visibility: hidden;
+  }
 }
 
 .page-wrapper {
   padding-bottom: 30px;
   position: relative;
+
+  &.secondary-section {
+    padding-top: 30px;
+  }
 }
 
 blockquote {
