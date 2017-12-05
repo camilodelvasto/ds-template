@@ -1,10 +1,8 @@
 <template>
-  <div class="index">
-    <div :fixed="true" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }" breakpoint="(min-width: 968px)">
-      <div class="page-wrapper secondary-section">
-        <div class="container capped">
-          <h1>The old way is OK</h1>
-        </div>
+  <div class="page-wrapper" :fixed="true" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }" breakpoint="(min-width: 968px)">
+    <div>
+      <div class="container capped">
+        <h1>The old way is OK</h1>
       </div>
       <div class="container capped">
         <div class="logo-badge">
@@ -127,6 +125,7 @@ h3 {
 
   @include breakpoint($sm) {
     justify-content: flex-start;
+    display: flex;
   }
 
   .card {

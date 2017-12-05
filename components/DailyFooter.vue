@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <span class="text">
-          Volunteerathon ®2017
+          Copyright 2010-2017 <a href="//thedailysource.org" target="_blank">The Daily Source</a> All Rights Reserved.  <nuxt-link>Terms of Service</nuxt-link>
         </span>
       </div>
     </div>
@@ -11,6 +11,10 @@
 </template>
 
 <style scoped lang="scss">
+.text {
+  text-align: center;
+  display: block;
+}
 </style>
 
 <script>

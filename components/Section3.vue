@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="page-wrapper">
     <div :fixed="true" class="is-fixed">
       <div class="page-wrapper">
         <div class="container capped">
@@ -44,7 +44,7 @@
           </ComboBox>
           <ComboBox iconsrc="money.png" duplicate="true">
             <h2>More of it goes to charity</h2>
-            <p>About 15% of proceeds of bikeathons etc. go to event admin and credit card costs. In a Volunteerathon, only 4% goes to those. The extra 11% goes to charity.</p>
+            <p>About 15% of proceeds of bikeathons etc. go to event admin and credit card costs. In a Volunteerathon&trade;, only 4% goes to those. The extra 11% goes to charity.</p>
           </ComboBox>
           <ComboBox iconsrc="bag.png" duplicate="false">
             <h2>You save a nonprofit lots of money</h2>
@@ -103,11 +103,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.page-wrapper {
-  margin-top: 32px;
-  padding-top: 32px;
-}
-
 h1 {
   color: $color-text;
   text-align: center;
@@ -149,6 +144,7 @@ h3 {
 
   @include breakpoint($sm) {
     justify-content: center;
+    display: flex;
   }
 
   .card {

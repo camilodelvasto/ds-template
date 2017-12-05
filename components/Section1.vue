@@ -33,4 +33,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.page-wrapper {
+  padding-top: 0;
+}
 </style>

@@ -1,55 +1,44 @@
 <template>
-  <div class="index">
-    <div class="page-wrapper">
-      <blockquote>
-        <div class="container">
-          A traditional fundraiser only happens one day out of the year in one place.<br>
-          You can do a Volunteerathon any time of the year anywhere in the world.
-        </div>
-      </blockquote>
-      <h1>Change the world in 3 easy steps:</h1>
-    </div>
+  <div class="page-wrapper">
+    <h1>Change the world in 3 easy steps:</h1>
     <div class="container">
       <div class="columns combo-wrapper is-multiline">
-        <ComboBox iconsrc="check.png" duplicate="false">
-          <h2>Select</h2>
+        <ComboBox iconsrc="check.png" duplicate="false" :large="true">
         </ComboBox>
-        <ComboBox iconsrc="invite.png" duplicate="false">
-          <h2>Invite</h2>
+        <ComboBox iconsrc="invite.png" duplicate="false" :large="true">
         </ComboBox>
-        <ComboBox iconsrc="act.png" duplicate="false">
-          <h2>Act</h2>
+        <ComboBox iconsrc="act.png" duplicate="false" :large="true">
         </ComboBox>
       </div>
     </div>
-    <div class="container form-wrapper">
-      <form method="post" action="/">
-        <div class="field">
-          <label class="label">I will do the following volunteer work or service project:</label>
-          <div class="control">
-            <input class="input" type="text" name="action" placeholder="">
+    <div class="container">
+      <div class="form-wrapper">
+        <form method="post" action="/">
+          <div class="field work">
+            <label class="label">I will do the following volunteer work or service project:</label>
+            <div class="control">
+              <input class="input" type="text" name="action" placeholder="">
+            </div>
+            <p class="help">To find nonprofits to help or independent projects to do, <a target="_blank" href="http://aqua.dailysource.org/donation/helpcreatethis">click here</a></p>
           </div>
-          <p class="help">To find nonprofits to help or independent projects to do, <a target="_blank" href="http://aqua.dailysource.org/donation/helpcreatethis">click here</a></p>
-        </div>
-        <div class="field">
-          <label class="label">Number of hours I will volunteer:</label>
-          <div class="control">
-            <input class="input" type="text" name="hours" placeholder="">
+          <div class="field hours">
+            <label class="label">Number of hours I will volunteer:</label>
+            <div class="control">
+              <input class="input" type="text" name="hours" placeholder="">
+            </div>
           </div>
-        </div>
-        <div class="field">
-          <label class="label">The donations will go to:</label>
-          <div class="control">
+          <div class="select donations">
+            <label class="label">The donations will go to:</label>
             <select>
-              <option disabled selected value> -- Please select -- </option>
-              <option value="np1">Nonprofit 1</option>
-              <option value="np2">Nonprofit 2</option>
-              <option value="np3">Nonprofit 3</option>
+                <option disabled selected value> -- Please select -- </option>
+                <option value="np1">Nonprofit 1</option>
+                <option value="np2">Nonprofit 2</option>
+                <option value="np3">Nonprofit 3</option>
             </select>
           </div>
-        </div>
-        <button class="button is-success" type="submit">Submit</button>
-      </form>        
+          <button class="button is-success is-medium" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -68,19 +57,67 @@ export default {
 
 <style scoped lang="scss">
 .page-wrapper {
-  background-color: $color-dark-gray;
+  background-color: $white;
   color: white;
   text-align: center;
-  padding: 40px 0;
+}
+
+h1 {
+  color: $color-emphasis;
+  margin-bottom: 40px;
 }
 
 .combo-wrapper {
-  justify-content: center;  
+  justify-content: center;
+  display: flex;
 }
 
 .form-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
+
+  button {
+    margin: 30px 0;
+  }
+}
+
+.help {
+  color: $color-dark-gray;
+}
+
+.work {
+  @include breakpoint($md) {
+    label {
+      text-align: left;
+    }
+    .help {
+      text-align: left;
+    }
+  }
+}
+
+.donations,
+.hours {
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    text-align: left;
+    width: 50%;
+
+    @include breakpoint($sm) {
+      width: 60%;
+    }
+  }
+
+  select,
+  .control {
+    width: 45%;
+
+    @include breakpoint($sm) {
+      width: 30%;
+    }
+  }
 }
 
 </style>

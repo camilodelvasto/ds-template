@@ -2,7 +2,7 @@
   <div class="box-wrapper" v-bind:class="{ 'column vertical': layout !== 'row' }">
     <div v-if="layout !== 'row'">
       <div class="icon-wrapper">
-        <img class="icon-img" :src="iconsrc">
+        <img class="icon-img" :src="iconsrc" v-bind:class="{ 'large': large }">
         <img class="icon-img" :src="iconsrc" v-if="duplicate === 'true'">
       </div>
       <div>
@@ -33,6 +33,15 @@
 
     .icon-img {
       width: 50px;
+
+      &.large {
+        width: auto;
+        max-width: 140px;
+
+        @include breakpoint($sm) {
+          max-width: 180px;
+        }    
+      }
     }
   }
 
@@ -91,6 +100,6 @@
 
 <script>
 export default {
-  props: [ 'iconsrc', 'duplicate', 'layout', 'reverse' ]
+  props: [ 'iconsrc', 'duplicate', 'layout', 'reverse', 'large' ]
 }
 </script>

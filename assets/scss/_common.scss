@@ -23,7 +23,7 @@
 }
 
 .page-wrapper {
-  padding-bottom: 30px;
+  padding: 40px 0;
   position: relative;
 
   &.secondary-section {
@@ -50,4 +50,8 @@ blockquote {
 
 .navbar >.container .navbar-brand {
   margin-left: 0 !important;
+}
+
+.label {
+  font-weight: 400 !important;
 }

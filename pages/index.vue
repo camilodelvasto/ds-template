@@ -1,12 +1,10 @@
 <template>
   <div class="index">
-    <div class="page-wrapper">
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
-      <Section5/>
-    </div>
+    <Section1/>
+    <Section2/>
+    <Section3/>
+    <Section4/>
+    <Section5/>
   </div>
 </template>
 
