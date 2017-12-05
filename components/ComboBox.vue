@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="columns horizontal" v-if="layout === 'row'" v-bind:class="{ 'reverse': reverse }">
-      <div class="icon-wrapper column is-4">
+      <div class="icon-wrapper column is-3">
         <img class="icon-img" :src="iconsrc">
       </div>
       <div class="column content">
@@ -68,7 +68,7 @@
     @include breakpoint($bulma) {
       display: flex;
       flex-direction: row;
-      margin: 15px 0;
+      margin: 10px 0;
     }
 
     &.reverse {
@@ -80,6 +80,7 @@
 
       @include breakpoint($bulma) {
         font-size: 20px !important;
+        text-align: left;
       }
     }
 

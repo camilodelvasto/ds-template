@@ -1,9 +1,7 @@
 <template>
-  <div class="index">
-    <div class="page-wrapper">
-      <h1>A big opportunity for good</h1>
-    </div>
+  <div class="page-wrapper">
     <div class="container">
+      <h1>A big opportunity for good</h1>
       <div class="combo-wrapper">
         <ComboBox iconsrc="volunteers-red.jpg" duplicate="false" layout="row" :reverse="false">
           <p>The average Volunteerathon raises $700, which is somewhat higher than the $600 that the average walkathon and bijeathon raise. This is because people on average will donate more if your time is helping a nonprofit than if you're exercising.</p>
@@ -35,16 +33,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .page-wrapper {
-  background-color: $color-dark-gray;
-  color: $white;
+  background-color: $color-light-bg;
   text-align: center;
   padding: 40px 0;
+
+  h1 {
+    color: $color-text;
+  }
 }
 
-.form-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
+.combo-wrapper {
+  padding: 40px 0;
 }
 
 
