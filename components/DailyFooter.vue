@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <span class="text">
-          Copyright 2010-2017 <a href="//thedailysource.org" target="_blank">The Daily Source</a> All Rights Reserved.  <nuxt-link>Terms of Service</nuxt-link>
+          Copyright 2010-2017 <a href="//thedailysource.org" target="_blank">The Daily Source</a> All Rights Reserved.  <a href="#">Terms of Service</a>
         </span>
       </div>
     </div>
