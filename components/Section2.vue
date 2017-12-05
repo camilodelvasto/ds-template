@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <Parallax :fixed="false" class="is-fixed" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }">
+    <Parallax :fixed="true" class="is-fixed" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }">
       <div class="page-wrapper">
         <div class="container capped">
           <h1>The old way is OK</h1>

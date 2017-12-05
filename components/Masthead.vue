@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container">
     <nav class="navbar is-transparent">
-      <div class="container is-fluid navbar-container">
+      <div class="container navbar-container">
         <div class="navbar-brand">
           <nuxt-link to="/"><Logo logowidth="350" logoheight="62" /></nuxt-link>
         </div>
@@ -35,7 +35,7 @@
 
   @include breakpoint($bulma) {
     margin-left: 50px;
-    margin-top: 33px;
+    margin-top: 24px;
   }
 }
 
@@ -71,10 +71,7 @@
 }
 .navbar {
   >.container {
-    margin: 0 !important;
-
     @include breakpoint($md) {
-      margin: 10px 20px !important;
       display: flex;
       align-items: center;
     }    

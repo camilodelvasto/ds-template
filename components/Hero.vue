@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="hero-img" v-bind:style="{ backgroundImage: `url(${imgsrc})` }"></div>
       <div class="hero-body">
-        <div class="content-container">
+        <div class="container content-container">
           <h1 class="title" v-html="headline"></h1>
           <h3 class="cta" v-html="cta"></h3>
         </div>
@@ -41,8 +41,9 @@
     }
 
     @include breakpoint($bulma) {
-      background-size: cover;
-      min-height: 45vw;
+      background-size: contain;
+      min-height: 38vw;
+      background-position: center;
     }
   }
 
@@ -56,7 +57,7 @@
       font-size: 28px;
 
       @include breakpoint($bulma) {
-        font-size: 40px;
+        font-size: 44px;
       }
     }
   }
@@ -82,8 +83,8 @@
   }
 
   @include breakpoint($md) {
-    bottom: 8vw;
-    font-size: 26px;
+    bottom: 15vw;
+    font-size: 28px;
   }
 }
 

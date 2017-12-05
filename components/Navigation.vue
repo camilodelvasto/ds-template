@@ -41,12 +41,13 @@
 }
 
 .navbar {
-  @include breakpoint($sm) {
+  @include breakpoint($md) {
     background: $color-emphasis-alt;
     padding-top: 10px;
   }
   @include breakpoint($bulma) {
     min-height: 45px;
+    justify-content: center;
   }
 }
 .navbar-container {

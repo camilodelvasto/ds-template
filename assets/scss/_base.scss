@@ -22,7 +22,7 @@ $i6: ( min:  374px );
 $phone: ( min:  480px );
 $sm: ( min:  768px );
 $md: ( min:  992px );
-$lg: ( min: 1200px );
+$lg: ( min: 1216px );
 $xg: ( min: 1281px );
 $sm-only: ( min: map-get($sm, min), max: map-get($md, min) - 1 );
 $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );

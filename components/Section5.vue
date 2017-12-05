@@ -1,10 +1,15 @@
 <template>
   <div class="index">
     <div class="page-wrapper">
-      <h1>A big opportunity for good</h1>
+      <blockquote>
+        <div class="container">
+          A traditional fundraiser only happens one day out of the year in one place.<br>
+          You can do a Volunteerathon any time of the year anywhere in the world.
+        </div>
+      </blockquote>
+      <h1>Change the world in 3 easy steps:</h1>
     </div>
     <div class="container">
-      <h3>The average Volunteerathon raises $700, which is somewhat higher than the $600 that the average walkathon and bijeathon raise. This is because people on average will donate more if your time is helping a nonprofit than if you're exercising.</h3>
       <div class="columns combo-wrapper is-multiline">
         <ComboBox iconsrc="check.png" duplicate="false">
           <h2>Select</h2>
