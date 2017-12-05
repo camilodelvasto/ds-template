@@ -8,7 +8,7 @@
       </div>
       <div class="container capped">
         <div class="logo-badge">
-          <h3>If you do this and invite people to support you</h3>
+          <h3>If you do one of these and invite people to support you:</h3>
         </div>
         <div class="columns">
           <div class="card column">

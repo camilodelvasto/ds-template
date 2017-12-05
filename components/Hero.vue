@@ -25,7 +25,7 @@
   }
 
   @include breakpoint($bulma) {
-    min-height: 45vw;
+    min-height: 34vw;
   }
 
   .hero-img {
@@ -42,7 +42,7 @@
 
     @include breakpoint($bulma) {
       background-size: contain;
-      min-height: 38vw;
+      min-height: 34vw;
       background-position: center;
     }
   }
@@ -66,10 +66,11 @@
 .tagline {
   z-index: 1;
   position: static;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   text-align: center;
   line-height: 1.1;
+  font-size: 36px;
 }
 
 .cta {
@@ -85,6 +86,10 @@
   @include breakpoint($md) {
     bottom: 15vw;
     font-size: 28px;
+  }
+
+  @include breakpoint($lg) {
+    bottom: 7vw;
   }
 }
 

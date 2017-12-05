@@ -8,10 +8,11 @@
       </div>
       <div class="container capped">
         <div class="logo-badge">
-          <h3>If you do this and invite people to support you</h3>
+          <h3>If you do this and invite people to support you...</h3>
           <div class="logo">
             <Logo logowidth="350" logoheight="62" />
           </div>
+          <h3 class="hide-me">If you do this and invite people to support you...</h3>
         </div>
         <div class="columns">
           <div class="card column">
@@ -49,11 +50,11 @@
             <h2>You save a nonprofit lots of money</h2>
             <p>If you volunteer 100 hours instead of training to ride or run long-distance, you save a nonprofit $1,200 to $1,800. That triples or quadruples your impact.</p>
           </ComboBox>
-          <ComboBox iconsrc="smiley.png" duplicate="true">
+          <ComboBox iconsrc="smiley.png" duplicate="false">
             <h2>You’ll be happier</h2>
             <p>You’ll be more satisifed serving others than walking or running, and you’ll be happier from creating a bigger impact.</p>
           </ComboBox>
-          <ComboBox iconsrc="smiley.png" duplicate="false">
+          <ComboBox iconsrc="smiley.png" duplicate="true">
             <h2>Your friends will be happier</h2>
             <p>People are happier about donating their money when your time is spent volunteering than when your time is spent walking or biking.</p>
           </ComboBox>
