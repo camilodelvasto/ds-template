@@ -81,7 +81,7 @@ h1 {
   }
 
   label {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -125,7 +125,7 @@ h1 {
     width: 45%;
 
     @include breakpoint($sm) {
-      width: 40%;
+      width: 50%;
     }
   }
 }

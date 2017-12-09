@@ -60,7 +60,7 @@ export default {
   data () {
     return {
       imgarr: ['s2-3.jpg', 's2-4.jpg', 's2-5.jpg'],
-      parallaxImgSrc: 'parallax.png',
+      parallaxImgSrc: 'bg-tile.jpg',
       currentImg: 0,
       timer: null
     }

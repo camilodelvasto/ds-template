@@ -1,6 +1,6 @@
 <template>
   <div class="logo-wrapper">
-    <img src="logo.jpg" :width="logowidth" :height="logoheight" alt="Volunteerathon logo">
+    <img src="logo-t.png" :width="logowidth" :height="logoheight" alt="Volunteerathon logo">
   </div>
 </template>
 
