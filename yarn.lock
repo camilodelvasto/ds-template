@@ -6583,6 +6583,10 @@ vue-meta@^1.1.0:
     lodash.isplainobject "^4.0.6"
     object-assign "^4.1.1"
 
+vue-parallax-js@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/vue-parallax-js/-/vue-parallax-js-0.0.5.tgz#75fb6dc88a98294ae1e2146eba4fde224c540186"
+
 vue-parallaxy@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/vue-parallaxy/-/vue-parallaxy-1.0.4.tgz#e254b7acc84657171dedcb481ddf4f91e07e2380"
