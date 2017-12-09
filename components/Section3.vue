@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper">
+  <section class="page-wrapper">
     <div :fixed="true" class="is-fixed">
       <div class="page-wrapper">
         <div class="container capped">
@@ -64,7 +64,7 @@
         <h3>That’s five wins instead of one for the same amount of effort</h3>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -103,11 +103,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h1 {
-  color: $color-text;
-  text-align: center;
-  font-size: 30px;
-}
 h3 {
   padding-bottom: 32px;
   text-align: center;

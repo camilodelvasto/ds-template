@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper" :fixed="true" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }" breakpoint="(min-width: 968px)">
+  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }" breakpoint="(min-width: 968px)">
     <div>
       <div class="container capped">
         <h1>The old way is OK</h1>
@@ -45,7 +45,7 @@
         <h3></h3>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -88,13 +88,6 @@ export default {
   min-height: 120vh;
 }
 
-h1 {
-  color: $color-text;
-  text-align: center;
-  font-size: 34px;
-}
-
-
 h3 {
   padding-bottom: 32px;
   text-align: center;
@@ -115,7 +108,7 @@ h3 {
 
   h3 {
     color: $color-text;
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 0;
   }
 }
