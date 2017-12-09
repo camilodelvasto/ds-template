@@ -14,10 +14,11 @@
   display: none;
 }
 
-.hide-me {
+.hide-me-but-leave-me {
   display: none;
 
   @include breakpoint($bulma) {
+    display: block;
     visibility: hidden;
   }
 }
@@ -54,4 +55,45 @@ blockquote {
 
 .label {
   font-weight: 400 !important;
+}
+
+.logo-badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  h3 {
+    color: $color-text;
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+}
+
+
+/* cards */
+.card {
+  padding: 0;
+  margin: 10px;
+  border: none !important;
+
+  .card-content {
+    padding: 10px;
+    height: calc(100vw - 30px);
+    border: none;
+    background-size: cover;
+
+    @include breakpoint($sm) {
+      height: calc(252px - 30px);
+    }
+  }
+
+  &.card-loop {
+    position: relative;
+
+    .card-content {
+      position: absolute;
+      width: calc(100% - 24px);
+    }
+  }
 }

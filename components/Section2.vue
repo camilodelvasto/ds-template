@@ -100,41 +100,12 @@ h3 {
   font-weight: bold;
 }
 
-.logo-badge {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  h3 {
-    color: $color-text;
-    font-size: 18px;
-    padding-bottom: 0;
-  }
-}
-
 .columns {
   margin-top: 20px;
 
   @include breakpoint($sm) {
     justify-content: flex-start;
     display: flex;
-  }
-
-  .card {
-    padding: 0;
-    margin: 10px;
-
-    .card-content {
-      padding: 10px;
-      height: calc(100vw - 30px);
-      border: 10px solid $white;
-      background-size: cover;
-
-      @include breakpoint($sm) {
-        height: calc(252px - 30px);
-      }
-    }
   }
 }
 

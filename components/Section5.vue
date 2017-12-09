@@ -36,7 +36,7 @@
                 <option value="np3">Nonprofit 3</option>
             </select>
           </div>
-          <button class="button is-success is-medium" type="submit">Submit</button>
+          <button class="button is-success is-medium" type="submit">Next</button>
         </form>
       </div>
     </div>
@@ -79,6 +79,10 @@ h1 {
   button {
     margin: 30px 0;
   }
+
+  label {
+    font-size: 18px;
+  }
 }
 
 .help {
@@ -115,7 +119,7 @@ h1 {
     width: 45%;
 
     @include breakpoint($sm) {
-      width: 30%;
+      width: 40%;
     }
   }
 }

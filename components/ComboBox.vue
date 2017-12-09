@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="columns horizontal" v-if="layout === 'row'" v-bind:class="{ 'reverse': reverse }">
-      <div class="icon-wrapper column is-3">
+      <div class="icon-wrapper column is-2">
         <img class="icon-img" :src="iconsrc">
       </div>
       <div class="column content">
@@ -53,7 +53,7 @@
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 17px;
     color: $color-text;
     font-weight: bold;
     line-height: 1.1;

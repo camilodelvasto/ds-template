@@ -12,27 +12,22 @@
           <div class="logo">
             <Logo logowidth="350" logoheight="62" />
           </div>
-          <h3 class="hide-me">If you do this and invite people to support you...</h3>
+          <h3 class="hide-me-but-leave-me">If you do this and invite people to support you...</h3>
         </div>
         <div class="columns">
           <div class="card column">
-            <div class="card-content">
-              <img src="s3-1.jpg">
+            <div class="card-content" style="backgroundImage: url(s3-1.jpg)"></div>
+          </div>
+          <div class="card column card-loop">
+            <div v-for="(image, index) in imgarr">
+              <transition name="fade" mode="out-in">
+                <div class="card-content" 
+                  :style="`backgroundImage: url(${imgarr[index]})`" v-if="index === currentImg % imgarr.length"></div>
+              </transition>
             </div>
           </div>
           <div class="card column">
-            <div class="card-content card-loop">
-              <div v-for="(image, index) in imgarr">
-                <transition name="fade">
-                  <img :src="imgarr[index]" v-if="index === currentImg % imgarr.length">
-                </transition>
-              </div>
-            </div>
-          </div>
-          <div class="card column">
-            <div class="card-content">
-              <img src="s3-2.jpg">
-            </div>
+            <div class="card-content" style="backgroundImage: url(s3-2.jpg)"></div>
           </div>
         </div>
       </div>
@@ -115,22 +110,7 @@ h3 {
 
 .container {
   @include breakpoint($sm) {
-    max-width: 840px;
     margin: 0 auto !important;
-  }
-}
-
-.logo-badge {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  h3 {
-    color: $color-text;
-    font-size: 16px;
-    padding-bottom: 0;
-    margin-right: 10px;
   }
 }
 
@@ -140,27 +120,6 @@ h3 {
   @include breakpoint($sm) {
     justify-content: center;
     display: flex;
-  }
-
-  .card {
-    padding: 0;
-    margin: 10px;
-
-    .card-content {
-      padding: 10px;
-      height: calc(100vw - 30px);
-
-      @include breakpoint($sm) {
-        height: auto;
-      }
-
-      &.card-loop {
-        img {
-          position: absolute;
-          max-width: calc(100% - 20px);
-        }
-      }
-    }
   }
 }
 
