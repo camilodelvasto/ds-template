@@ -51,20 +51,28 @@
 .copy {
   text-align: center;
   padding: 20px 0;
-  color: $color-silver;
+  color: $color-dark-gray;
   align-self: flex-end;
   font-size: 14px;
 
   @include breakpoint($md) {
     text-align: right;
   }
+
+  a {
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-dark-gray;
+    }
+  }
 }
 
 .social-icons {
-  background-color: $color-medium-gray;
-  color: $color-text;
+  background-color: $color-emphasis-alt;
   border-bottom: 1px solid $color-silver;
-  padding: 30px 0;
+  padding: 10px 0;
   font-size: 24px;
   font-style: italic;
 
@@ -92,13 +100,13 @@
 
   svg {
     path {
-      fill: $color-silver;
+      fill: $color-dark-gray;
       transition: fill 0.2s ease-in-out;
     }
 
     &:hover {
       path {
-        fill: $color-medium-gray;
+        fill: $white;
       }
     }
   }
@@ -106,8 +114,8 @@
 
 .footer-links-wrapper {
   padding: 20px 0;
-  background-color: $color-light-gray;
-  border-top: 2px solid $color-silver;
+  background-color: rgba($color-emphasis-alt, 0.7);
+  border-top: 1px solid $color-silver;
 
   .container {
     display: flex;
