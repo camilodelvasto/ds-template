@@ -42,7 +42,6 @@
 
 <style scoped lang="scss">
 .footer {
-  border-top: 2px solid $color-emphasis-alt;
   padding: 0;
 
   .hero-body {
@@ -97,9 +96,8 @@
 }
 
 .footer-links-wrapper {
-  border-bottom: 1px solid $color-silver;
   padding: 20px 0;
-  background-color: $color-medium-light-gray;
+  background-color: rgba($color-dark-gray, 0.95);
 
   .container {
     display: flex;
@@ -115,7 +113,7 @@
 
 .footer-links {
   h3 {
-    color: $color-text;
+    color: $white;
     font-size: 24px;
     margin-bottom: 10px;
   }

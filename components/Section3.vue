@@ -99,7 +99,7 @@ export default {
 
 <style scoped lang="scss">
 h3 {
-  padding-bottom: 32px;
+  padding: 15px 0 0;
   text-align: center;
 }
 .logo {
