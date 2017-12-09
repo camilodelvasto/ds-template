@@ -19,7 +19,7 @@
             <div class="card-content" style="backgroundImage: url(s3-1.jpg)"></div>
           </div>
           <div class="card column card-loop">
-            <div v-for="(image, index) in imgarr">
+            <div class="transition-wrapper" v-for="(image, index) in imgarr">
               <transition name="fade" mode="out-in">
                 <div class="card-content" 
                   :style="`backgroundImage: url(${imgarr[index]})`" v-if="index === currentImg % imgarr.length"></div>

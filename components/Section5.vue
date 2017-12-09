@@ -100,6 +100,12 @@ h1 {
   }
 }
 
+.work {
+  label {
+    text-align: left;
+  }
+}
+
 .donations,
 .hours {
   display: flex;

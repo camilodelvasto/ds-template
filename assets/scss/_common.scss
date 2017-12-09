@@ -90,10 +90,19 @@ blockquote {
 
   &.card-loop {
     position: relative;
+    height: calc(100vw - 30px);
+
+    @include breakpoint($sm) {
+      height: calc(252px);
+    }
 
     .card-content {
       position: absolute;
       width: calc(100% - 24px);
+
+      @include breakpoint($xs) {
+        height: calc(100vw - 56px);
+      }
     }
   }
 }
