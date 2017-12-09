@@ -91,7 +91,7 @@ export default {
 h1 {
   color: $color-text;
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
 }
 
 
