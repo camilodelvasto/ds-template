@@ -91,21 +91,29 @@ blockquote {
 
   .card-content {
     padding: 10px;
-    height: calc(100vw - 30px);
+    height: calc(80vw - 30px);
     border: none;
     background-size: cover;
 
     @include breakpoint($sm) {
-      height: calc(252px - 30px);
+      height: calc(255px);
+    }
+
+    @include breakpoint($xg) {
+      height: calc(305px);
     }
   }
 
   &.card-loop {
     position: relative;
-    height: calc(100vw - 30px);
+    height: calc(80vw - 30px);
 
     @include breakpoint($sm) {
-      height: calc(252px);
+      height: calc(279px);
+    }
+
+    @include breakpoint($xg) {
+      height: calc(329px);
     }
 
     .card-content {
