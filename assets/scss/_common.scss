@@ -40,6 +40,10 @@ blockquote {
 .container {
   margin: 0 20px !important;
 
+  @include breakpoint($sm) {
+    margin: auto !important;
+  }
+
   @include breakpoint($lg) {
     margin: auto !important;
     width: 960px !important;
