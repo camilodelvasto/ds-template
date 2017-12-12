@@ -23,6 +23,17 @@
   }
 }
 
+
+html {
+  .display-only-for-tablet-up {
+    display: none;
+
+    @include breakpoint($md) {
+      display: block;
+    }
+  }
+}
+
 .page-wrapper {
   padding: 40px 0;
   position: relative;

@@ -20,7 +20,7 @@
           Default content for this combo box
         </slot>
       </div>
-      <div class="column is-2" v-if="!reverse">
+      <div class="column is-2 display-only-for-tablet-up" v-if="!reverse">
       </div>
     </div>
   </div>
