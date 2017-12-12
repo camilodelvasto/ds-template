@@ -80,9 +80,10 @@
 
     .icon-img {
       width: auto;
+      max-width: 140px;
 
-      @include breakpoint($xs) {
-        max-width: 140px;
+      @include breakpoint($lg) {
+        max-width: 120px;
       }
 
       @include breakpoint($xg) {
@@ -100,14 +101,14 @@
       flex-direction: row-reverse;
 
       .icon-wrapper {
-        @include breakpoint($sm) {
+        @include breakpoint($lg) {
           text-align: right;
         }
       }
     }
 
     .icon-wrapper {
-      @include breakpoint($sm) {
+      @include breakpoint($lg) {
         text-align: left;
       }
     }
