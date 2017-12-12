@@ -72,7 +72,7 @@ h1 {
 
   @include breakpoint($sm) {
     display: flex;
-    padding: 0 7%;
+    padding: 0 10%;
   }
 }
 
