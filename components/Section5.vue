@@ -69,7 +69,11 @@ h1 {
 
 .combo-wrapper {
   justify-content: center;
-  display: flex;
+
+  @include breakpoint($sm) {
+    display: flex;
+    padding: 0 7%;
+  }
 }
 
 .form-wrapper {
