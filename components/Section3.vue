@@ -12,7 +12,6 @@
           <div class="logo">
             <Logo logowidth="350" logoheight="62" />
           </div>
-          <h3 class="hide-me-but-leave-me">If you do this and invite people to support you...</h3>
         </div>
         <div class="columns">
           <div class="card column">
@@ -106,6 +105,14 @@ h3 {
   text-align: center;
 }
 .is-fixed.Masthead {
+}
+
+.logo-badge {
+  flex-direction: column;
+
+  h3 {
+    margin-bottom: 10px;
+  }
 }
 
 .container {
