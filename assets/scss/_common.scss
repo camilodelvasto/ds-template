@@ -15,10 +15,10 @@
 }
 
 .hide-me-but-leave-me {
-  display: none;
+  display: none !important;
 
   @include breakpoint($bulma) {
-    display: block;
+    display: block !important;
     visibility: hidden;
   }
 }

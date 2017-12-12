@@ -5,12 +5,12 @@
         <h1>The new way quadruples the benefits</h1>
       </div>
       <div class="container capped">
-        <div class="logo-badge">
-          <h3>If you do this and invite people to support you...</h3>
-          <div class="logo">
+        <div class="logo-badge columns">
+          <h3 class="column">If you do this and invite people to support you...</h3>
+          <div class="logo column">
             <Logo logowidth="350" logoheight="62" />
           </div>
-          <h3 class="hide-me-but-leave-me">If you do this and invite people to support you...</h3>
+          <h3 class="hide-me-but-leave-me column">If you do this and invite people to support you...</h3>
         </div>
         <div class="columns">
           <div class="card column">
@@ -97,7 +97,7 @@ export default {
 
 <style scoped lang="scss">
 h3 {
-  padding: 15px 0 0;
+  padding: 0 10px;
   text-align: center;
 }
 .logo {
