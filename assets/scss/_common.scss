@@ -125,7 +125,7 @@ blockquote {
       width: calc(100% - 24px);
 
       @include breakpoint($xs) {
-        height: calc(100vw - 56px);
+        height: calc(80vw - 56px);
       }
     }
   }
