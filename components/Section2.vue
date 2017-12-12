@@ -41,9 +41,6 @@
           </ComboBox>
         </div>
       </div>
-      <div class="container capped">
-        <h3></h3>
-      </div>
     </div>
   </section>
 </template>
