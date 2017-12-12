@@ -122,6 +122,14 @@ h3 {
   }
 }
 
+.card {
+  .card-content {
+    @include breakpoint($sm) {
+      height: calc(252px - 30px);
+    }    
+  }
+}
+
 .card-footer {
   text-align: center;
   font-size: 22px;
