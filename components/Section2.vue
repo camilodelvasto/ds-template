@@ -1,5 +1,5 @@
 <template>
-  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundImage: `url(${parallaxImgSrc})` }" breakpoint="(min-width: 968px)">
+  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundColor: `#F5E9E0`, backgroundPosition: bgPosition }" breakpoint="(min-width: 968px)">
     <div>
       <div class="container capped">
         <h1>The old way is OK</h1>
@@ -59,11 +59,18 @@ export default {
       imgarr: ['s2-3.jpg', 's2-4.jpg', 's2-5.jpg'],
       parallaxImgSrc: 'bg-tile.jpg',
       currentImg: 0,
-      timer: null
+      timer: null,
+      scrollTop: 0
     }
   },
   mounted () {
     this.startRotation()
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     startRotation: function () {
@@ -74,6 +81,15 @@ export default {
     },
     prev: function () {
       this.currentImg--
+    },
+    handleScroll () {
+      this.scrollTop = window.scrollY;
+    }
+  },
+  computed: {
+    bgPosition () {
+      var translate = this.scrollTop / 3
+      return `0 ${translate}px`
     }
   }
 }
