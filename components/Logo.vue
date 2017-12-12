@@ -9,7 +9,7 @@
   margin-left: -4px;
   
   @include breakpoint($sm) {
-    margin-left: -9px;  
+    margin-left: 3px;  
   }
 }
 </style>
