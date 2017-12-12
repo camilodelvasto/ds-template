@@ -116,13 +116,13 @@
 
 .footer-links-wrapper {
   padding: 20px 0;
-  background-color: rgba($color-emphasis-alt, 0.7);
+  background-color: $color-dark-gray;
   border-top: 1px solid $color-silver;
 }
 
 .footer-links {
   h3 {
-    color: $color-text;
+    color: $color-light-gray;
     font-size: 24px;
     margin-bottom: 10px;
   }
@@ -133,10 +133,11 @@
   }
 
   a {
-    color: $color-dark-gray;
+    color: $color-medium-gray;
 
     &:hover {
       text-decoration: underline;
+      color: $white;
     }
   }
 }
