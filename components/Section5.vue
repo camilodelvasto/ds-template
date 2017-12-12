@@ -36,7 +36,7 @@
                 <option value="np3">Nonprofit 3</option>
             </select>
           </div>
-          <button class="button is-success is-medium" type="submit">Next</button>
+          <button class="button is-success is-large" type="submit">Next</button>
         </form>
       </div>
     </div>
@@ -80,8 +80,8 @@ h1 {
   max-width: 600px;
   margin: 0 auto;
 
-  button {
-    margin: 30px 0;
+  button[type=submit] {
+    margin: 50px 0 30px;
   }
 
   label {
