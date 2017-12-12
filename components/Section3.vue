@@ -1,10 +1,8 @@
 <template>
   <section class="page-wrapper">
     <div :fixed="true" class="is-fixed">
-      <div class="page-wrapper">
-        <div class="container capped">
-          <h1>The new way quadruples the benefits</h1>
-        </div>
+      <div class="container capped">
+        <h1>The new way quadruples the benefits</h1>
       </div>
       <div class="container capped">
         <div class="logo-badge">
