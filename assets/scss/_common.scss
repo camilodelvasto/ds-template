@@ -42,7 +42,19 @@ blockquote {
 
   @include breakpoint($lg) {
     margin: auto !important;
+    width: 960px !important;
   }
+
+  @include breakpoint($xg) {
+    width: 1344px !important;
+  }
+
+  &.is-fluid {
+    @include breakpoint($lg) {
+      width: 1152px !important;
+    }
+  }
+
 }
 
 .content-container {

@@ -2,7 +2,7 @@
   <div class="nav-container">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
-        <div class="container">
+        <div class="container is-fluid">
           <nuxt-link to="/">Home</nuxt-link>
           <nuxt-link to="/">Volunteering</nuxt-link>
           <nuxt-link to="/">Nonprofits</nuxt-link>

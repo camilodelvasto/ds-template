@@ -1,5 +1,5 @@
 <template>
-  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundColor: `#F0F4C3`, backgroundPosition: bgPosition }" breakpoint="(min-width: 968px)">
+  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundColor: `#F5E9E0`, backgroundPosition: bgPosition }" breakpoint="(min-width: 968px)">
     <div>
       <div class="container capped">
         <h1>The old way is OK</h1>
