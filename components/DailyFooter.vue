@@ -23,11 +23,13 @@
       </div>
       <div class="footer-links-wrapper">
         <div class="container">
-          <div class="footer-links" v-for="menu in footerMenuLinks">
-            <ul>
-              <h3>{{menu.heading}}</h3>
-              <li v-for="item in menu.links"><a :href="item.href">{{item.name}}</a></li>
-            </ul>
+          <div class="columns">
+            <div class="footer-links column" v-for="menu in footerMenuLinks">
+              <ul>
+                <h3 v-html="menu.heading"></h3>
+                <li v-for="item in menu.links"><a :href="item.href">{{item.name}}</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -98,17 +100,6 @@
 .footer-links-wrapper {
   padding: 20px 0;
   background-color: rgba($color-dark-gray, 0.95);
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    @include breakpoint($md) {
-      flex-direction: row;
-      border-bottom: none;
-    }
-  }
 }
 
 .footer-links {
@@ -140,20 +131,29 @@ export default {
     return {
       footerMenuLinks: [
         {
+          heading: 'Volunteerathon&trade;',
+          links: [
+            { name: 'Home', href: '#' },
+            { name: 'Volunteering', href: '#' },
+            { name: 'Nonprofits', href: '#' },
+            { name: 'Tips', href: '#' }
+          ]
+        },
+        {
           heading: 'About us',
           links: [
             { name: 'The team', href: '#' },
             { name: 'Our mission', href: '#' },
             { name: 'Careers', href: '#' },
-            { name: 'Volunteering', href: '#' }
+            { name: 'News', href: '#' }
           ]
         },
         {
-          heading: 'How it works',
+          heading: 'User area',
           links: [
-            { name: 'The process', href: '#' },
-            { name: 'Technical support', href: '#' },
+            { name: 'Login', href: '#' },
             { name: 'Register', href: '#' },
+            { name: 'Technical support', href: '#' },
             { name: 'Start an event', href: '#' }
           ]
         },
