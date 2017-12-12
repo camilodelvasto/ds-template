@@ -37,6 +37,7 @@ export default {
 .page-wrapper {
   background-color: $color-light-bg;
   text-align: center;
+  padding-bottom: 10px;
 
   h1 {
     color: $color-text;
