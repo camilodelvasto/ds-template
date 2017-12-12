@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container">
     <nav class="navbar is-transparent">
-      <div class="container navbar-container">
+      <div class="container is-fluid navbar-container">
         <div class="navbar-brand">
           <nuxt-link to="/"><Logo logowidth="350" logoheight="62" /></nuxt-link>
         </div>
