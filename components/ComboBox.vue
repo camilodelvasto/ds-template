@@ -68,10 +68,24 @@
     text-align: center;
     margin: 10px 0;
     align-items: center;
+    @include breakpoint($sm) {
+      padding: 0 3%;
+    }
+
+    @include breakpoint($xg) {
+      padding: 0 6%;
+    }
 
     .icon-img {
-      max-width: 140px;
       width: auto;
+
+      @include breakpoint($xs) {
+        max-width: 140px;
+      }
+
+      @include breakpoint($xg) {
+        max-width: 140px;
+      }
     }
 
     @include breakpoint($bulma) {
@@ -82,6 +96,18 @@
 
     &.reverse {
       flex-direction: row-reverse;
+
+      .icon-wrapper {
+        @include breakpoint($sm) {
+          text-align: right;
+        }
+      }
+    }
+
+    .icon-wrapper {
+      @include breakpoint($sm) {
+        text-align: left;
+      }
     }
 
     p {
@@ -90,6 +116,10 @@
       @include breakpoint($bulma) {
         font-size: 20px !important;
         text-align: left;
+      }
+
+      @include breakpoint($xg) {
+        font-size: 22px !important;
       }
     }
 
