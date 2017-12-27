@@ -91,6 +91,8 @@ h1 {
 
 .help {
   color: $color-dark-gray;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .work {
