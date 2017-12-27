@@ -78,7 +78,11 @@ h1 {
 
 .form-wrapper {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 50px auto 0;
+
+  @include breakpoint($md) {
+    margin-top: 80px;
+  }
 
   button[type=submit] {
     margin: 50px 0 30px;
@@ -116,10 +120,12 @@ h1 {
 .hours {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   label {
     text-align: left;
     width: 50%;
+    margin-bottom: 0;
 
     @include breakpoint($sm) {
       width: 60%;

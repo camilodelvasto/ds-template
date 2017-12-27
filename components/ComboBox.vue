@@ -7,7 +7,6 @@
       </div>
       <div>
         <slot>
-          Default content for this combo box
         </slot>
       </div>
     </div>
@@ -17,7 +16,6 @@
       </div>
       <div class="column content">
         <slot>
-          Default content for this combo box
         </slot>
       </div>
     </div>
