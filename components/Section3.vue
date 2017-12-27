@@ -13,8 +13,13 @@
           <h3 class="hide-me-but-leave-me column">If you do this and invite people to support you...</h3>
         </div>
         <div class="columns">
-          <div class="card column">
-            <div class="card-content" style="backgroundImage: url(s3-1.jpg)"></div>
+          <div class="card column card-loop">
+            <div class="transition-wrapper" v-for="(image, index) in imgarrL">
+              <transition name="fade" mode="out-in">
+                <div class="card-content card-taller" 
+                  :style="`backgroundImage: url(${imgarrL[index]})`" v-if="index === currentImg % imgarrL.length"></div>
+              </transition>
+            </div>
           </div>
           <div class="card column card-loop">
             <div class="transition-wrapper" v-for="(image, index) in imgarr">
@@ -24,8 +29,13 @@
               </transition>
             </div>
           </div>
-          <div class="card column">
-            <div class="card-content" style="backgroundImage: url(s3-2.jpg)"></div>
+          <div class="card column card-loop">
+            <div class="transition-wrapper" v-for="(image, index) in imgarrR">
+              <transition name="fade" mode="out-in">
+                <div class="card-content card-taller" 
+                  :style="`backgroundImage: url(${imgarrR[index]})`" v-if="index === currentImg % imgarrR.length"></div>
+              </transition>
+            </div>
           </div>
         </div>
       </div>
@@ -74,6 +84,8 @@ export default {
   data () {
     return {
       imgarr: ['s3-3.jpg', 's3-4.jpg', 's3-5.jpg'],
+      imgarrL: ['s3-1.jpg', 's3-6.jpg', 's3-7.jpg'],
+      imgarrR: ['s3-2.jpg', 's3-8.jpg', 's3-9.jpg'],
       currentImg: 0,
       timer: null
     }
