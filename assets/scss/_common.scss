@@ -98,6 +98,11 @@ blockquote {
     height: calc(80vw - 30px);
     border: none;
     background-size: cover;
+    background-position: center;
+
+    &.bg-position-right {
+      background-position: right center;
+    }
 
     @include breakpoint($sm) {
       height: calc(255px);

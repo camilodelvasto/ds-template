@@ -10,7 +10,7 @@
         </div>
         <div class="columns">
           <div class="card column">
-            <div class="card-content" style="backgroundImage: url(s2-1.jpg)">
+            <div class="card-content bg-position-right" style="backgroundImage: url(s2-1.jpg)">
             </div>
             <footer class="card-footer">
               Walkathon
@@ -111,10 +111,11 @@ h3 {
   margin-top: 20px;
   color: $color-text;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .columns {
-  margin-top: 20px;
+  margin-top: 5px;
 
   @include breakpoint($sm) {
     justify-content: flex-start;
@@ -139,4 +140,7 @@ h3 {
   border: none;
 }
 
+.box-wrapper.column.vertical {
+  padding-top: 0;
+}
 </style>
