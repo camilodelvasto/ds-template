@@ -28,7 +28,9 @@
             </div>
           </div>
           <div class="select donations">
-            <label class="label">The donations will go to:</label>
+            <label class="label">The donations will go to:
+              <p class="help">The nonprofit you donate to can be different than the nonprofit you volunteer for.</p>
+            </label>
             <select>
                 <option disabled selected value> -- Please select -- </option>
                 <option value="np1">Nonprofit 1</option>
@@ -81,7 +83,7 @@ h1 {
   margin: 0 auto;
 
   button[type=submit] {
-    margin: 50px 0 30px;
+    margin: 100px 0 30px;
   }
 
   label {
