@@ -1,12 +1,14 @@
 <template>
-  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundColor: `#f5f1e0`, backgroundPosition: bgPosition }" breakpoint="(min-width: 968px)">
+  <section class="page-wrapper" :fixed="true" v-bind:style="{ backgroundColor: `#fbf7ea`, backgroundPosition: bgPosition }" breakpoint="(min-width: 968px)">
     <div>
       <div class="container capped">
         <h1>The old way is OK</h1>
       </div>
       <div class="container capped">
-        <div class="logo-badge">
-          <h3>If you do one of these and invite people to support you:</h3>
+        <div class="logo-badge columns">
+          <h3 class="column">If you do one of these fundraisers and invite people to support you:</h3>
+          <h3 class="hide-me-but-leave-me column">If you do one of these fundraisers and invite people to support you:</h3>
+          <h3 class="hide-me-but-leave-me column">If you do one of these fundraisers and invite people to support you:</h3>
         </div>
         <div class="columns">
           <div class="card column">
@@ -142,5 +144,12 @@ h3 {
 
 .box-wrapper.column.vertical {
   padding-top: 0;
+}
+
+.logo-badge {
+  h3 {
+    padding: 0 10px;
+    text-align: center;
+  }  
 }
 </style>
