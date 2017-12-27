@@ -14,18 +14,18 @@
         </div>
         <div class="columns">
           <div class="card column">
-            <div class="card-content" style="backgroundImage: url(s3-1.jpg)"></div>
+            <div class="card-content card-taller" style="backgroundImage: url(s3-1.jpg)"></div>
           </div>
           <div class="card column card-loop">
             <div class="transition-wrapper" v-for="(image, index) in imgarr">
               <transition name="fade" mode="out-in">
-                <div class="card-content" 
+                <div class="card-content card-taller" 
                   :style="`backgroundImage: url(${imgarr[index]})`" v-if="index === currentImg % imgarr.length"></div>
               </transition>
             </div>
           </div>
           <div class="card column">
-            <div class="card-content" style="backgroundImage: url(s3-2.jpg)"></div>
+            <div class="card-content card-taller" style="backgroundImage: url(s3-2.jpg)"></div>
           </div>
         </div>
       </div>
