@@ -128,4 +128,16 @@ h3 {
     opacity: 0
 }
 
+
+.logo-wrapper {
+  padding: 0 20px;  
+}
+.logo.column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.box-wrapper.vertical {
+  padding-bottom: 0;
+}
+
 </style>
