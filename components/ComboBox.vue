@@ -98,6 +98,10 @@
     &.reverse {
       flex-direction: row-reverse;
 
+      @include breakpoint($md) {
+        padding-left: 70px;
+      }
+
       .icon-wrapper {
         @include breakpoint($lg) {
           text-align: right;
