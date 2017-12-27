@@ -53,7 +53,7 @@
 .copy {
   text-align: center;
   padding: 20px 0;
-  color: $color-dark-gray;
+  color: $color-medium-gray;
   align-self: flex-end;
   font-size: 14px;
 
@@ -62,7 +62,7 @@
   }
 
   a {
-    color: $white;
+    color: $color-text;
 
     &:hover {
       text-decoration: underline;
@@ -72,7 +72,7 @@
 }
 
 .social-icons {
-  background-color: $color-emphasis-alt;
+  background-color: $color-beige;
   border-bottom: 1px solid $color-silver;
   padding: 10px 0;
   font-size: 24px;
