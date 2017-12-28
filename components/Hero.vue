@@ -62,9 +62,17 @@
       top: 17px;
       font-size: 28px;
 
+      @include breakpoint($sm) {
+        left: 10px;
+      }
       @include breakpoint($bulma) {
         font-size: 44px;
       }
+    }
+    h3 {
+      @include breakpoint($sm) {
+        left: 10px;
+      }      
     }
   }
 }

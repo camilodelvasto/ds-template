@@ -54,11 +54,12 @@
   text-align: center;
   padding: 20px 0;
   color: $color-medium-gray;
-  align-self: flex-end;
+  align-self: center;
   font-size: 14px;
 
   @include breakpoint($md) {
     text-align: right;
+    align-self: flex-end;
   }
 
   a {

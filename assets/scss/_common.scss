@@ -32,6 +32,13 @@
   }
 }
 
+.columns {
+  @include breakpoint($sm) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 blockquote {
   font-size: 24px;
   font-style: italic;
@@ -42,6 +49,7 @@ blockquote {
 
   @include breakpoint($sm) {
     margin: auto !important;
+    padding: 0 10px;
   }
 
   @include breakpoint($lg) {
@@ -57,12 +65,22 @@ blockquote {
     @include breakpoint($lg) {
       width: 1152px !important;
     }
+
+    @include breakpoint($xg) {
+      width: 1344px !important;
+    }
   }
 
 }
 
 .content-container {
   position: static !important;
+
+  @include breakpoint($bulma) {
+    width: 1344px !important;
+    min-height: 34vw;
+    position: relative !important;
+  }
 }
 
 .navbar >.container .navbar-brand {
