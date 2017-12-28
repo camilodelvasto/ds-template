@@ -90,7 +90,7 @@
 .cta {
   font-size: 20px;
   color: $color-emphasis;
-  bottom: 13vw;
+  bottom: 16vw;
   position: absolute;
 
   @include breakpoint($sm) {

@@ -62,6 +62,10 @@ blockquote {
   }
 
   &.is-fluid {
+    @include breakpoint($md) {
+      width: calc(100vw) !important;
+    }
+
     @include breakpoint($lg) {
       width: 1152px !important;
     }
