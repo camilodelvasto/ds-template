@@ -27,15 +27,19 @@
               <input class="input" type="text" name="hours" placeholder="">
             </div>
           </div>
-          <div class="select donations">
-            <label class="label">The donations will go to:</label>
-            <select>
-                <option disabled selected value> -- Please select -- </option>
-                <option value="np1">Nonprofit 1</option>
-                <option value="np2">Nonprofit 2</option>
-                <option value="np3">Nonprofit 3</option>
-            </select>
+          <div class="field donations">
+            <label class="label">The donations will go to:
+            </label>
+            <div class="select">
+              <select>
+                  <option disabled selected value> -- Please select -- </option>
+                  <option value="np1">Nonprofit 1</option>
+                  <option value="np2">Nonprofit 2</option>
+                  <option value="np3">Nonprofit 3</option>
+              </select>
+            </div>
           </div>
+          <p class="help special">The nonprofit you donate to can be different than the nonprofit you volunteer for.</p>
           <button class="button is-success is-large" type="submit">Next</button>
         </form>
       </div>
@@ -72,31 +76,31 @@ h1 {
 
   @include breakpoint($sm) {
     display: flex;
-    padding: 0 7%;
+    padding: 0 10%;
   }
 }
 
 .form-wrapper {
   max-width: 600px;
-  margin: 50px auto 0;
-
-  @include breakpoint($md) {
-    margin-top: 80px;
-  }
+  margin: 0 auto;
 
   button[type=submit] {
-    margin: 50px 0 30px;
+    margin: 30px 0 30px;
   }
 
   label {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 .help {
-  color: $color-dark-gray;
+  color: $color-medium-gray;
+  font-style: italic;
   font-size: 16px;
-  margin-top: 10px;
+
+  &.special {
+    text-align: left;
+  }
 }
 
 .work {
@@ -120,26 +124,28 @@ h1 {
 .hours {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   label {
     text-align: left;
     width: 50%;
-    margin-bottom: 0;
 
     @include breakpoint($sm) {
       width: 60%;
     }
   }
 
-  select,
+  .select,
   .control {
     width: 45%;
 
     @include breakpoint($sm) {
-      width: 40%;
+      width: 50%;
     }
   }
+}
+
+.donations {
+  margin-bottom: 0;
 }
 
 </style>
