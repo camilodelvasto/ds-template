@@ -112,7 +112,7 @@ h3 {
   text-align: center;
 }
 .logo {
-  text-align: center;
+  text-align: right;
 }
 .is-fixed.Masthead {
 }
@@ -138,5 +138,9 @@ h3 {
 .fade-enter, .fade-leave-to {
     opacity: 0
 }
-
+.logo-badge {
+  h3 {
+    text-align: left;
+  }
+}
 </style>
