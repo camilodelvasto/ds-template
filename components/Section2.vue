@@ -111,7 +111,7 @@ h3 {
   margin-top: 20px;
   color: $color-text;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .columns {
@@ -142,5 +142,12 @@ h3 {
 
 .box-wrapper.column.vertical {
   padding-top: 0;
+
+  h2 {
+    font-size: 19px;
+  }
+  p {
+    font-size: 17px !important;
+  }
 }
 </style>
