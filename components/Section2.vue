@@ -128,6 +128,9 @@ h3 {
     @include breakpoint($sm) {
       height: calc(252px - 30px);
     }    
+    @include breakpoint($xg) {
+      height: calc(302px - 30px);
+    }    
   }
 }
 
