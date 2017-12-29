@@ -7,8 +7,6 @@
       <div class="container capped">
         <div class="logo-badge columns">
           <h3 class="column">If you do one of these fundraisers and invite people to support you:</h3>
-          <h3 class="hide-me-but-leave-me column">If you do one of these fundraisers and invite people to support you:</h3>
-          <h3 class="hide-me-but-leave-me column">If you do one of these fundraisers and invite people to support you:</h3>
         </div>
         <div class="columns">
           <div class="card column">
@@ -148,8 +146,8 @@ h3 {
 
 .logo-badge {
   h3 {
-    padding: 0 10px;
-    text-align: center;
+    padding: 0 20px;
+    text-align: left;
   }  
 }
 </style>
