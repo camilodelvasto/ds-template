@@ -109,8 +109,14 @@ export default {
 
 <style scoped lang="scss">
 h3 {
-  padding: 0 10px;
+  padding: 0 0 0 10px;
   text-align: center;
+}
+
+.logo-badge {
+  h3 {
+    text-align: left;
+  }
 }
 .logo {
   text-align: center;
@@ -133,6 +139,11 @@ h3 {
   }
 }
 
+.logo-wrapper {
+  @include breakpoint($sm) {
+    padding: 0 50px;
+  }
+}
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s
 }
