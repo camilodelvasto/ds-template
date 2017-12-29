@@ -69,11 +69,11 @@
     margin: 10px 0;
     align-items: center;
     @include breakpoint($sm) {
-      padding: 0 3%;
+      padding: 0;
     }
 
     @include breakpoint($xg) {
-      padding: 0 6%;
+      padding: 0 1%;
     }
 
     .icon-img {
@@ -99,7 +99,7 @@
       flex-direction: row-reverse;
 
       @include breakpoint($md) {
-        padding-left: 70px;
+        padding-left: 40px;
       }
 
       .icon-wrapper {
