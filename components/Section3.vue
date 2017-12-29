@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="container capped">
-        <h3>That’s five wins instead of one for the same amount of effort</h3>
+        <h3 class="tagline">That’s five wins instead of one for the same amount of effort</h3>
       </div>
     </div>
   </section>
@@ -140,4 +140,7 @@ h3 {
   padding-bottom: 0;
 }
 
+.tagline {
+  margin-top: 30px;
+}
 </style>
