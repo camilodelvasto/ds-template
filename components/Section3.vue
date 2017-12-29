@@ -10,7 +10,6 @@
           <div class="logo column">
             <Logo logowidth="350" logoheight="62" />
           </div>
-          <h3 class="hide-me-but-leave-me column">If you do this and invite people to support you...</h3>
         </div>
         <div class="columns">
           <div class="card column card-loop">
