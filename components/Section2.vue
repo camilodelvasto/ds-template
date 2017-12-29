@@ -146,7 +146,7 @@ h3 {
 
 .logo-badge {
   h3 {
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: left;
   }  
 }
